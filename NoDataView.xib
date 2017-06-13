@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="NoNetworkImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="2NR-00-n1p">
+                    <rect key="frame" x="48" y="117" width="225" height="293"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network not available, Please check your Internet Connection" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L03-2w-9DQ">
+                    <rect key="frame" x="39" y="418" width="253" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="L03-2w-9DQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="39" id="1EJ-4a-smV"/>
+                <constraint firstAttribute="bottom" secondItem="L03-2w-9DQ" secondAttribute="bottom" constant="109" id="6NJ-dj-v1h"/>
+                <constraint firstItem="L03-2w-9DQ" firstAttribute="top" secondItem="2NR-00-n1p" secondAttribute="bottom" constant="8" id="6kV-Ll-YlX"/>
+                <constraint firstItem="2NR-00-n1p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="48" id="TmP-Ss-wwV"/>
+                <constraint firstAttribute="trailing" secondItem="L03-2w-9DQ" secondAttribute="trailing" constant="28" id="jCt-13-kRk"/>
+                <constraint firstItem="2NR-00-n1p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="117" id="p3Y-8u-uG8"/>
+                <constraint firstAttribute="trailing" secondItem="2NR-00-n1p" secondAttribute="trailing" constant="47" id="q8h-2T-hJt"/>
+            </constraints>
+            <point key="canvasLocation" x="359" y="266"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NoNetworkImage.png" width="225" height="225"/>
+    </resources>
+</document>
